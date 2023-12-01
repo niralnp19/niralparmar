@@ -303,7 +303,22 @@
                         <div class="col-md-8">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" method="POST" id="contactForm" novalidate="novalidate" data-netify="true" onSubmit="submit">
+                                <form name="contact" method="POST" data-netlify="true">
+                                    <input type="hidden" name="form-name" value="contact">
+                            
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required><br>
+                            
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required><br>
+                            
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" required></textarea><br>
+                            
+                                    <button type="submit">Submit</button>
+                                </form>
+                                <!--
+                                <form name="sentMessage" method="POST" id="contactForm" novalidate="novalidate" onSubmit="submit" netify>
                                     <div class="control-group">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name"
                                             required="required"
@@ -332,6 +347,7 @@
                                         <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
                                     </div>
                                 </form>
+                                -->
                             </div>
                         </div>
                     </div>
