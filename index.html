@@ -303,7 +303,8 @@
                         <div class="col-md-8">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="contact" method="POST" id="contactForm" data-netlify="true">
+                                <form name="contact" method="POST" id="contactForm" data-netlify="true" data-netify-honeypot="bot-field">
+                                    <input style="display: none" name="bot-field">  
                                     <div class="control-group">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name"
                                             required="required"
