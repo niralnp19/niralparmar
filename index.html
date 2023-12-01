@@ -303,34 +303,33 @@
                         <div class="col-md-8">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate" data-netify="true" onSubmit="submit">
                                     <div class="control-group">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name"
                                             required="required"
-                                            data-validation-required-message="Please enter your name" />
+                                            data-validation-required-message="Please enter your name" name="name"/>
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
                                         <input type="email" class="form-control" id="email" placeholder="Your Email"
                                             required="required"
-                                            data-validation-required-message="Please enter your email" />
+                                            data-validation-required-message="Please enter your email" name="email"/>
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
                                         <input type="text" class="form-control" id="subject" placeholder="Subject"
                                             required="required"
-                                            data-validation-required-message="Please enter a subject" />
+                                            data-validation-required-message="Please enter a subject" name="subject"/>
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
                                         <textarea class="form-control" id="message" placeholder="Message"
                                             required="required"
-                                            data-validation-required-message="Please enter your message"></textarea>
+                                            data-validation-required-message="Please enter your message" name="message"></textarea>
                                         <p class="help-block"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton"
-                                            onclick="submitForm()">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -361,10 +360,6 @@
         <!-- Cursor -->
         <div class="cursor"></div>
         <!-- JavaScript Libraries -->
-        <script>
-
-        </script>
-
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
@@ -374,10 +369,6 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
