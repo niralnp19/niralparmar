@@ -245,13 +245,13 @@ a:focus {
 }
 
 .navbar.nav-sticky .navbar-brand-pj:hover {
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #6F47E4;
     color: transparent;
     transition: 0.5s;
 }
 
 .navbar.nav-sticky .navbar-brand-pj {
-    color: white;
+    color: #6F47E4;
 }
 
 .navbar .navbar-brand:hover {
@@ -1542,6 +1542,35 @@ section {
     color: white;
 }
 
+@media (max-width: 610px) {
+    section {
+        padding: 20px;
+    }
+    .cineseeker{
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    section h1 {
+        margin-top: 0;
+    }
+    .cineseeker .red {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .emarket h1 {
+        font-size: 50px;
+    }
+    .lightspeed {
+        padding: 20px;
+    }
+
+    .lightspeed h1{
+        font-size: 50px;
+    }
+}
+
 section img {
     border-radius: 25px;
 }
@@ -1600,7 +1629,6 @@ section h1 {
 }
 
 .lightspeed {
-    padding: 50px;
     background: linear-gradient(#3457B4, #1B2B6D);
     display: flex;
     justify-content: center;
