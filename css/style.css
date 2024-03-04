@@ -626,6 +626,10 @@ a:focus {
         justify-content: center;
     }
 
+    .hero-video{
+        display: none;
+    }
+
     .hero .hero-text {
         width: 100%;
         text-align: center;
