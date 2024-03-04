@@ -630,6 +630,10 @@ a:focus {
         display: none;
     }
 
+    .cursor {
+        display:none;
+    }
+
     .hero .hero-text {
         width: 100%;
         text-align: center;
