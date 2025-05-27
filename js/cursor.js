@@ -37,11 +37,10 @@ function toggleMenu(element) {
 
 //Slideshow on Project Page
 let slideIndex = 0;
-  let isScrolling = false; // Variable to track scrolling status
-  showSlides(slideIndex);
+  let isScrolling = false;
 
   function showSlides(index) {
-    if (isScrolling) return; // Ignore additional scrolls while processing one
+    if (isScrolling) return;
     isScrolling = true;
 
     const slides = document.getElementsByClassName("mySlides");
@@ -65,17 +64,24 @@ let slideIndex = 0;
       bar.classList.remove("active-bar");
     });
 
-    bars[slideIndex].classList.add("active-bar");
+    if (bars[slideIndex]) {
+      bars[slideIndex].classList.add("active-bar");
+    }
 
     setTimeout(() => {
-      isScrolling = false; // Reset scrolling status after processing
-    }, 1000); // Adjust the delay based on your transition duration
+      isScrolling = false;
+    }, 300); // Reduced to 300ms for snappier feel
   }
 
   function currentSlide(index) {
     showSlides(index - 1);
   }
 
+  // Initialize first slide when page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    showSlides(0);
+  });
+  
   // Automatic slide change on scroll
   window.addEventListener("wheel", function (e) {
     const deltaX = e.deltaX;
